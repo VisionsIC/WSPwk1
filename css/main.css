@@ -39,7 +39,7 @@ body { max-height: 6454px; background: hsla(0,0%,83%,1.00);}
 .vic_nav_li a { text-decoration: none; color: hsla(0,0%,0%,1.00); font-family: Nunito; font-size: 1.5em; display: block; line-height: 2em; text-align: top; }
 .vic_nav_li a:hover { text-decoration: none; color: hsla(0,0%,100%,1.00); font-family: Nunito; font-size: 1.5em; display: block; background-color: hsla(197,77%,44%,1.00); border-radius: 24px; }
 /* ABOUT ============================== */ 
-#vic_about_img, #vic_blog_img, #vic_comp_img { height: 48px; width: 48px; margin-top: 20px; }
+#vic_about_img, #vic_blog_img, #vic_comp_img { height: 48px; width: 48px; margin: 20px 50px 0px 0px;  }
 
 .vic_art_wrap { background-color: hsla(0,0%,100%,1.00); margin: 25px 20px 0px 20px; padding: 20px 20px 0px 20px; border-radius: 24px; height: 100%; }
 
@@ -64,7 +64,7 @@ figure { height: 100%; }
 /* HEADINGS ============================== */
 
 
-.vic_h2_style { position: relative; height: 100px; width: 960px; margin-top: 20px; }
+.vic_h2_style { position: relative; left: 35px; height: 100px; width: 960px; margin-top: 20px; }
 .vic_h2_style a { position: absolute; top: 5px; left: 50px; font-family: Nunito; font-size: 4em; text-decoration: none; color: hsla(0,0%,0%,1.00); text-align: center; display: block; }
 .vic_h3_style { position: relative; height: 60px; width: 880px; margin-top: 20px; margin-bottom: 20px; background-color: hsla(0,0%,0%,1.00); text-align: center; border-radius: 24px; }
 .vic_h3_style a { position: absolute; top: 10px; left: 50px; font-family: Nunito; font-size: 2em; text-decoration: none; color: hsla(0,0%,100%,1.00); text-align: center; display: block; } 
@@ -146,9 +146,9 @@ article img { width: 100%; }
 	#slide5:checked ~ #slides article:nth-child(5) .info { opacity: 1; transition: all 1s ease-out 0.6s; }
 	.info, #controls, #slides, #active, #active label, .info h3, .desktop, .tablet, .mobile { -webkit-transform: translateZ(0); transition: all 0.5s ease-out; }
 
-/*=======================BUTTON STYLING */
+/* BUTTON STYLING======================= */
 
-button { position: relative; top: 20px; width: 200px; height: 50px; border: 0px; border-radius: 24px; background-color: hsla(198,87%,44%,1.00); font-size: 1em; font-family: Nunito; }
+button { position: relative; top: 20px; left: 30px; width: 200px; height: 50px; border: 0px; border-radius: 24px; background-color: hsla(198,87%,44%,1.00); font-size: 1em; font-family: Nunito; }
 button.view_cmp_btn a { display: block; color: hsla(0,0%,100%,1.00);  }
 
 /* Responsive Styling */

@@ -1,1 +1,81 @@
-/* Maps Component Stylesheet ========================================================================================================================*//* Universal CSS Override & Reset */*{ margin:0; padding:0;}/* CSS Font Styling */@font-face {    font-family: 'nunitoregular';    src: url('fonts/nunito/nunito-regular-webfont.eot');    src: url('fonts/nunito/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'),         url('fonts/nunito/nunito-regular-webfont.woff2') format('woff2'),         url('fonts/nunito/nunito-regular-webfont.woff') format('woff'),         url('fonts/nunito/nunito-regular-webfont.ttf') format('truetype'),         url('fonts/nunito/nunito-regular-webfont.svg#nunitoregular') format('svg');    font-weight: normal;    font-style: normal;}@font-face {    font-family: 'virgo_01regular';    src: url('fonts/virgo/virgo-webfont.eot');    src: url('fonts/virgo/virgo-webfont.eot?#iefix') format('embedded-opentype'),         url('fonts/virgo/virgo-webfont.woff2') format('woff2'),         url('fonts/virgo/virgo-webfont.woff') format('woff'),         url('fonts/virgo/virgo-webfont.ttf') format('truetype'),         url('fonts/virgo/virgo-webfont.svg#virgo_01regular') format('svg');    font-weight: normal;    font-style: normal;}/* Navigation Style & Sturcture CSS */#header { left: 0; float: left; width: auto; height: 6.3em; z-index: 1000; }#caret { display: inline-block; height: 7px; width: 7px; border-left: 3px solid #fff; border-bottom: 3px solid #fff; transform: rotate(-45deg) translateY(-4px); }body { position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; font-family: Nunito; background: hsla(197,77%,44%,1.00); }li, #trigger2, #trigger { top: 40; list-style-type: none; display: inline-block; padding: 13px; color: #f2f2f2; transition: 0.2s; }ul { margin-top: 0; position: absolute; top: 0; background: hsla(0,0%,68%,1.00); display: block; width: 100%; height: 6.6em; text-align: right; padding-left: 0; padding-right: 0; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; }#main { left: 0; } li:hover { color: hsla(197,77%,44%,1.00); background: #f2f2f2; border-bottom-left-radius: 24px; border-radius: 24px; }#trigger2:hover { color: hsla(197,77%,44%,1.00); background: #f2f2f2; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; }#dropdown { top: 2.9em; background-color: hsla(0,0%,0%,1.00); height: 0; overflow: hidden; width: auto; right: 1em; border-radius: 24px; transition: 0.5s; z-index: 2000; }#dropdown li { display: block; padding-left: 10px; padding-right: 50px; text-align: left; }a { text-decoration: none; }#dwn { font-size: 0.8em; }#trigger:hover + #dropdown, #dropdown:hover { height: 12em; }/* Maps Component CSS */body { font-family: Nunito; background: hsla(0,0%,75%,1.00); }p { position: relative; top: 50px; font-size: 20px; text-align: left; padding: 0px 300px; }h1 {  position: relative; top: 50px; font-family: Nunito; font-size: 24px; text-align: center; color: hsla(0,0%,100%,1.00); } #myMap{ width: 100%; height: 50%; }.label { box-sizing: border-box; background: #05F24C; box-shadow: 2px 2px 4px #333; border:5px solid #346FF7; height: 20px; width: 20px; border-radius: 10px; -webkit-animation: pulse 1s ease 1s 3; -moz-animation: pulse 1s ease 1s 3; animation: pulse 1s ease 1s 3; }/* ANIMATIONS */@-webkit-keyframes pulse { 40% { -webkit-transform: scale(2); -moz-transform: scale(2); transform: scale(2); }  100% { -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); }}@-moz-keyframes pulse { 40% { -webkit-transform: scale(2); -moz-transform: scale(2); transform: scale(2); }100% { -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); }}@keyframes pulse {  40% { -webkit-transform: scale(2); -moz-transform: scale(2); transform: scale(2); }  100% { -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); }}iframe { position: relative; top: -75px; left: 20%; margin: 0 auto; width: 60%; height: 50%; border-radius: 24px; padding: 10px; }
+/* Maps Component Stylesheet 
+============================================================
+============================================================*/
+/* Universal CSS Override & Reset */
+
+*{ margin:0; padding:0;}
+
+/* CSS Font Styling */
+
+@font-face {
+    font-family: 'nunitoregular';
+    src: url('fonts/nunito/nunito-regular-webfont.eot');
+    src: url('fonts/nunito/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nunito/nunito-regular-webfont.woff2') format('woff2'),
+         url('fonts/nunito/nunito-regular-webfont.woff') format('woff'),
+         url('fonts/nunito/nunito-regular-webfont.ttf') format('truetype'),
+         url('fonts/nunito/nunito-regular-webfont.svg#nunitoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'virgo_01regular';
+    src: url('fonts/virgo/virgo-webfont.eot');
+    src: url('fonts/virgo/virgo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/virgo/virgo-webfont.woff2') format('woff2'),
+         url('fonts/virgo/virgo-webfont.woff') format('woff'),
+         url('fonts/virgo/virgo-webfont.ttf') format('truetype'),
+         url('fonts/virgo/virgo-webfont.svg#virgo_01regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navigation Style & Sturcture CSS */
+
+
+#main_prgh { top: 200px; font-size: 20px; text-align: left; padding: 0px 400px; }
+#head_h1 { position: absolute; top: 145px; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } 
+h1 { font-family: Nunito; font-weight: bold; font-size: 1.5em; text-align: center; color: hsla(0,0%,0%,1.00); z-index: 900; }
+body { position: relative; font-family: Nunito; background: hsla(0,0%,75%,1.00); margin: 0 auto; }
+#header { left: 0; width: auto; height: 6.3em; z-index: 1001; }
+#caret { display: inline-block; height: 7px; width: 7px; border-left: 3px solid #fff; border-bottom: 3px solid #fff; transform: rotate(-45deg) translateY(-4px); }
+li, #trigger2, #trigger { top: 0px; list-style-type: none; display: inline-block; padding: 13px; color: #f2f2f2; transition: 0.2s; }
+ul { margin-top: 0; position: absolute; top: 0; background: hsla(0,0%,68%,1.00); display: block; width: 960px; height: 6.6em; text-align: right; padding-left: 0; padding-right: 0; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; }
+#main { position: fixed; top: 5.5%; left: 50%; width: 960px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 1000;} 
+li:hover { color: hsla(197,77%,44%,1.00); background: #f2f2f2; border-bottom-left-radius: 24px; border-radius: 24px; }
+#dropdown { top: 3.7em; background-color: hsla(0,0%,0%,1.00); height: 0; overflow: hidden; width: auto; right: .9em; border-radius: 24px; transition: 0.5s; z-index: 2000; }
+#dropdown li { display: block; padding-left: 10px; padding-right: 50px; text-align: left; }
+#dropdown2 { top: 3.7em; background-color: hsla(0,0%,0%,1.00); height: 0; overflow: hidden; width: auto; right: 7em; border-radius: 24px; transition: 0.5s; z-index: 2000; }
+#dropdown2 li { display: block; padding-left: 10px; padding-right: 50px; text-align: left; }
+a { text-decoration: none; }
+#dwn { font-size: 0.8em; }
+#trigger:hover + #dropdown, #dropdown:hover { height: 11.5em; }
+#trigger2:hover + #dropdown2, #dropdown2:hover { height: 2.9em; }
+li.x1 { top: 0; }
+#x0 { position: relative; top: 0; left: 0px; }
+
+/* Maps Component CSS */
+
+
+p { position: relative; top: 50px; font-size: 20px; text-align: left; padding: 0px 300px; }
+
+
+ #myMap{ width: 100%; height: 50%; }
+.label { box-sizing: border-box; background: #05F24C; box-shadow: 2px 2px 4px #333; border:5px solid #346FF7; height: 20px; width: 20px; border-radius: 10px; -webkit-animation: pulse 1s ease 1s 3; -moz-animation: pulse 1s ease 1s 3; animation: pulse 1s ease 1s 3; }
+
+/* ANIMATIONS */
+@-webkit-keyframes pulse {
+ 40% { -webkit-transform: scale(2); -moz-transform: scale(2); transform: scale(2); }
+  100% { -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); }
+}
+@-moz-keyframes pulse {
+ 40% { -webkit-transform: scale(2); -moz-transform: scale(2); transform: scale(2); }
+100% { -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); }
+}
+@keyframes pulse {
+  40% { -webkit-transform: scale(2); -moz-transform: scale(2); transform: scale(2); }
+  100% { -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); }
+}
+
+iframe { position: relative; top: 400px; left: 50%; margin: 0 auto; width: 50%; height: 450px; -webkit-border-radius: 24px; -moz-border-radius: 24px; -ms-border-radius: 24px; -o-border-radius: 24px; border-radius: 24px; padding: 10px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}

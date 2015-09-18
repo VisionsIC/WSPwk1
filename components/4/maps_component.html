@@ -1,1 +1,134 @@
-<!DOCTYPE html><html><head>	<title>WSP Map Component: Aaron Wilson</title>	<link rel="stylesheet" type="text/css" href="../../css/reset.css" />	<link rel="stylesheet" type="text/css" href="maps_component.css" />	</head><body>    <!-- Start Navigation -->    <nav>  <ul id="header">    <a href="../../index.html" id="brand">      <li id="x0">      <img src="../../images/visionsic.png">      </li>    </a>    <label id="trigger2" for="x7"><i class="fa fa-bars"></i></label>  </ul>  <input type="checkbox" id="x7" />  <ul id="main">    <a href="../../index.html#vic_about_h2">      <li class="x1">        About      </li>    </a>    <a href="../../index.html#vic_blog_h2" id="trigger">      <li class="x1">        Blog &nbsp;        <span id="caret"></span>      </li>    </a>    <ul id="dropdown">      <a href="../1/slider_component.html">        <li>          Slider Component        </li>      </a>    </ul>    <a href="../../index.html#vic_comp_h2" id="trigger">      <li class="x1">        Components &nbsp;        <span id="caret"></span>      </li>    </a>    <ul id="dropdown">      <a href="../2/nav_component.html">        <li>          Navigation Component        </li>      </a>      <a href="../3/form_component.html">        <li>          Form Component        </li>      </a>      <a href="maps_component.html">        <li>          Maps Component        </li>      </a>      <a href="../5/footer_component.html">        <li>          Footer Component        </li>      </a>    </ul>  </ul></nav>            <!-- End Navigation -->	<!-- Start Map Component -->    <h1>    Example Component 4: Custom CSS Maps Component    </h1><div id="myMap"></div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24506.740666168484!2d-75.43641244999999!3d39.8441551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1442157631676" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>	<!-- End Map Component -->          <p>   This is an example of my learning how to implement an embedded css controlled Google Maps component. I will try to load a custum Google Maps API. This Maps Component uses the iframe embed tags to achieve it's look and effect to which is triggered by css's (positioning) attribute. I've also added a few css styles for more effect.  </p>        <!-- Insert In-line JavaScript   --><script language="javascript1.5" type="application/javascript">    //External resources://http://maps.google.com/maps/api/js?sensor=false//https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.jsfunction init() {    var mapOptions = {      zoom: 8,      center: new google.maps.LatLng(39.986855,-75.196442),      mapTypeId: google.maps.MapTypeId.ROADMAP,      disableDefaultUI: true  };    var myMap = new google.maps.Map(document.getElementById('myMap'), mapOptions);    var marker = new MarkerWithLabel({    position: myMap.getCenter(),    icon: {      path: google.maps.SymbolPath.CIRCLE,      scale: 0, //tamaño 0    },    map: myMap,    draggable: true,    labelAnchor: new google.maps.Point(10, 10),    labelClass: "label", // the CSS class for the label  });}google.maps.event.addDomListener(window, 'load', init);</script>        <!-- End In-line JavaScript -->        <!-- JavaScript External Resources -->    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCNRfP6ls6frGfR2k5Zp6w4GDp7Cnu3V8" type="text/javascript"></script><script src="http://maps.google.com/maps/api/js?sensor=false"></script><script src="https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.js"></script>	</body></html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WSP Map Component: Aaron Wilson</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="maps_component.css" />
+
+	
+</head>
+<body>
+
+	<!-- Navigation Component -->
+    
+<nav>
+  <ul id="main">
+    <ul id="header">
+    <a href="../../index.html" id="brand">
+      <li id="x0">
+      <img src="../../images/visionsic.png">
+      </li>
+    </a>
+  </ul>
+
+    <a href="../../index.html#vic_about_h2">
+      <li class="x1">
+        About Me
+      </li>
+    </a>
+    <a href="../../index.html#vic_blog_h2" id="trigger2">
+      <li class="x1">
+        Main CTA &nbsp;
+        <span id="caret"></span>
+      </li>
+    </a>
+    <ul id="dropdown2">
+      <a href="../../components/1/slider_component.html">
+        <li>
+          Slider Component
+        </li>
+      </a>
+    </ul>
+    <a href="../../index.html#vic_comp_h2" id="trigger">
+      <li class="x1">
+        Components &nbsp;
+        <span id="caret"></span>
+      </li>
+    </a>
+    <ul id="dropdown">
+      <a href="../2/nav_component.html">
+        <li>
+          Navigation Component
+        </li>
+      </a>
+      <a href="../3/form_component.html">
+        <li>
+          Form Component
+        </li>
+      </a>
+      <a href="../4/maps_component.html">
+        <li>
+          Maps Component
+        </li>
+      </a>
+      <a href="../5/footer_component.html">
+        <li>
+          Footer Component
+        </li>
+      </a>
+    </ul>
+  </ul>
+</nav>    
+	<!-- End Navigation Component -->
+
+	<!-- Start Map Component -->
+<header id="head_h1">
+    <h1>
+    Example Component 4: Custom CSS Maps Component
+    </h1>
+</header>
+<div id="myMap"></div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24506.740666168484!2d-75.43641244999999!3d39.8441551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1442157631676" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	<!-- End Map Component -->
+    
+      <p id="main_prgh">
+   This is an example of my learning how to implement an embedded css controlled Google Maps component. I will try to load a custum Google Maps API. This Maps Component uses the iframe embed tags to achieve it's look and effect to which is triggered by css's (positioning) attribute. I've also added a few css styles for more effect.
+  </p>
+
+    
+    <!-- Insert In-line JavaScript   -->
+<script language="javascript1.5" type="application/javascript">
+    
+//External resources:
+//http://maps.google.com/maps/api/js?sensor=false
+//https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.js
+
+function init() {
+  
+  var mapOptions = {
+      zoom: 8,
+      center: new google.maps.LatLng(39.986855,-75.196442),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI: true
+  };
+  
+  var myMap = new google.maps.Map(document.getElementById('myMap'), mapOptions);
+  
+  var marker = new MarkerWithLabel({
+    position: myMap.getCenter(),
+    icon: {
+      path: google.maps.SymbolPath.CIRCLE,
+      scale: 0, //tamaño 0
+    },
+    map: myMap,
+    draggable: true,
+    labelAnchor: new google.maps.Point(10, 10),
+    labelClass: "label", // the CSS class for the label
+  });
+}
+google.maps.event.addDomListener(window, 'load', init);
+
+</script>
+    
+    <!-- End In-line JavaScript -->
+    
+    <!-- JavaScript External Resources -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCNRfP6ls6frGfR2k5Zp6w4GDp7Cnu3V8" type="text/javascript"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+	
+</body>
+</html>

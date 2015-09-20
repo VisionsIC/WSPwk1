@@ -73,3 +73,12 @@ li.x1 { top: 0; }
 	
 	div.box .message { position: relative; left: 30px;padding: 7px 7px; width: 350px; background: hsla(0,0%,100%,1.00); border-radius: 24px; overflow: hidden; height: 150px; }
 	div.box .button { margin: 0 0 10px 0; padding: 4px 7px; background: hsla(0,0%,100%,1.00); color: hsla(197,77%,44%,1.00); border-radius: 24px; position: relative; top: 10px; left: 382px; width: 150px; }
+	
+	/* CSS Form Effects Styles */
+	
+	input[type="text"] { font-weight: bold; text-indent: 10px; background-color: hsla(200,61%,50%,0.40); /* new */ -webkit-transition: background-color .75s ease; -moz-transition: background-color .75s ease; -o-transition: background-color .75s ease; transition: background-color .75s ease; }
+	input[type="text"]:focus { background-color: hsla(0,0%,0%,1.00); color: hsla(0,0%,100%,1.00); }
+	::-webkit-input-placeholder { color: hsla(0,0%,75%,1.00); }
+	:-moz-placeholder { /* Firefox 18- */ color: hsla(41,40%,83%,0.91); }
+	::-moz-placeholder {  /* Firefox 19+ */ color: hsla(41,40%,83%,0.91); } 
+	:-ms-input-placeholder { color: hsla(41,40%,83%,0.91); }

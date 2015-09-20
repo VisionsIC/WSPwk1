@@ -34,7 +34,7 @@
 /* Navigation Style & Sturcture CSS */
 
 
-#main_prgh { top: 200px; font-size: 20px; text-align: left; padding: 0px 400px; }
+#main_prgh { top: 250px; font-size: 20px; text-align: left; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 #head_h1 { position: absolute; top: 145px; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } 
 h1 { font-family: Nunito; font-weight: bold; font-size: 1.5em; text-align: center; color: hsla(0,0%,0%,1.00); z-index: 900; }
 body { position: relative; font-family: Nunito; background: hsla(0,0%,75%,1.00); margin: 0 auto; }

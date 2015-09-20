@@ -31,7 +31,7 @@
 }
 
 
-main p { position: relative; top: 175px; font-size: 20px; text-align: left; left: 50%; width: 960px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+main p { position: relative; top: 175px; font-size: 20px; text-align: left; left: 50%; width: 960px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding: 0px 50px; }
 h1 {  position: relative; top: -25px; font-family: Nunito; font-weight: bold; font-size: 1.5em; text-align: center; color: hsla(0,0%,0%,1.00); }
 body { position: relative; font-family: Nunito; background: hsla(0,0%,75%,1.00); }
 #header { left: 0; width: auto; height: 6.3em; z-index: 1001; }

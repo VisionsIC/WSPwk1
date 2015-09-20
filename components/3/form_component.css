@@ -31,7 +31,7 @@
 }
 
 
-main p { position: relative; top: 175px; font-size: 20px; text-align: left; width: 960px;  }
+main p { position: relative; top: 175px; font-size: 20px; text-align: left; }
 h1 {  position: relative; top: -25px; font-family: Nunito; font-weight: bold; font-size: 1.5em; text-align: center; color: hsla(0,0%,0%,1.00); }
 body { position: relative; font-family: Nunito; background: hsla(0,0%,75%,1.00); }
 #header { left: 0; width: auto; height: 6.3em; z-index: 1001; }
@@ -56,7 +56,7 @@ li.x1 { top: 0; }
 
 	body { font-family: Nunito; background: hsla(0,0%,75%,1.00); }
 	
-	p { position: relative; top: 225px; left: 50%; font-size: 20px; text-align: left; padding: 0px 300px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+	p { position: relative; top: 300px; left: 50%; font-size: 20px; text-align: left; padding: 0px 100px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 960px; }
 	
 	form,input,select,textarea { margin: 0; padding: 10px; color: hsla(0,0%,0%,1.00); text-indent: 15px; }
 	

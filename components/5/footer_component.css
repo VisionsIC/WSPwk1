@@ -30,7 +30,7 @@
 
 main p { position: relative; top: 250px; left: 50%; width: 960px; font-size: 20px; text-align: left; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 h1 {  position: relative; top: 145px; font-family: Nunito; font-weight: bold; font-size: 1.5em; text-align: center; color: hsla(0,0%,0%,1.00); }
-body { position: relative; font-family: Nunito; background: hsla(0,0%,75%,1.00); }
+body { position: relative; font-family: Nunito; background: hsla(0,0%,75%,1.00); background-image: url(../../images/aaron_bg.png); background-size: auto; overflow: hidden; }
 
 /* Navigation CSS Styles */
 #header { left: 0; width: auto; height: 6.3em; z-index: 1001; }

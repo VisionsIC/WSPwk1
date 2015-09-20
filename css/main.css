@@ -25,7 +25,7 @@
     font-style: normal;
 
 }
-body { max-height: 6454px; background: hsla(0,0%,83%,1.00);}
+body { max-height: 6454px; background: hsla(0,0%,83%,1.00); }
 #vic_page_wrap { width: 960px; background: hsla(0,0%,83%,1.00); margin: 0 auto; z-index: 0; }
 /* HEADER ============================== */
 #vic_header_wrap { position: relative; }

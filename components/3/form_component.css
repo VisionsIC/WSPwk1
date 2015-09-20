@@ -54,7 +54,7 @@ li.x1 { top: 0; }
 
 /* Form Component CSS */
 
-	body { font-family: Nunito; background: hsla(0,0%,75%,1.00); }
+	body { font-family: Nunito; background: hsla(0,0%,75%,1.00); background-image: url(../../images/aaron_bg.png); background-size: auto; overflow: hidden; }
 	
 	p { position: relative; top: 250px; left: 50%; font-size: 20px; text-align: left; padding: 0px 100px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 960px; }
 	

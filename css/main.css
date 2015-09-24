@@ -260,10 +260,12 @@ figure {
 	top: 1900px;
 	left: 20px;
 }
-
-#vic_footer_h3 p {
+#vic_footer_h3 { 
 	position: relative;
 	top: 0px;
+}
+#vic_footer_h3 p {
+	position: relative;
 	color: hsla(0,0%,100%,1.00);
 	font-family: Nunito;
 	font-size: 2em;
@@ -301,7 +303,6 @@ figure {
 #vic_comp_sect {
 	position: relative;
 	top: 1000px;
-	height: 3675px;
 	margin-bottom: 10px;
 	margin-top: 20px;
 	background-color: hsla(0,0%,100%,0.00);
@@ -361,3 +362,5 @@ button.view_cmp_btn a {
 	display: block;
 	color: hsla(0,0%,100%,1.00);
 }
+
+#vic_foot { position: relative; top: 1010px; left: 0px; }

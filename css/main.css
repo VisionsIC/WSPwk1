@@ -1,10 +1,12 @@
 
-/* Project CSS 
+/* Project CSS - Aaron Wilson - WSP 9/27/2015 - Edward Almeida / Josh Bloom - Instructors */
 /* ============================================================ */
+
+/* Font Style CSS */
 @font-face {
 	font-family: 'nunitoregular';
 	src: url('fonts/nunito/nunito-regular-webfont.eot');
-	src: url('fonts/nunito/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/nunito/nunito-regular-webfont.woff2') format('woff2'),  url('fonts/nunito/nunito-regular-webfont.woff') format('woff'),  url('fonts/nunito/nunito-regular-webfont.ttf') format('truetype'),  url('fonts/nunito/nunito-regular-webfont.svg#nunitoregular') format('svg');
+	src: url('fonts/nunito/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/nunito/nunito-regular-webfont.woff2') format('woff2'), url('fonts/nunito/nunito-regular-webfont.woff') format('woff'), url('fonts/nunito/nunito-regular-webfont.ttf') format('truetype'), url('fonts/nunito/nunito-regular-webfont.svg#nunitoregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -12,11 +14,12 @@
 @font-face {
 	font-family: 'virgo_01regular';
 	src: url('fonts/virgo/virgo-webfont.eot');
-	src: url('fonts/virgo/virgo-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/virgo/virgo-webfont.woff2') format('woff2'),  url('fonts/virgo/virgo-webfont.woff') format('woff'),  url('fonts/virgo/virgo-webfont.ttf') format('truetype'),  url('fonts/virgo/virgo-webfont.svg#virgo_01regular') format('svg');
+	src: url('fonts/virgo/virgo-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/virgo/virgo-webfont.woff2') format('woff2'), url('fonts/virgo/virgo-webfont.woff') format('woff'), url('fonts/virgo/virgo-webfont.ttf') format('truetype'), url('fonts/virgo/virgo-webfont.svg#virgo_01regular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
+/* Global CSS Styles */
 body {
 	max-height: 6454px;
 	background: hsla(0,0%,83%,1.00);
@@ -44,6 +47,7 @@ body {
 	position: absolute;
 	top: -580px;
 	left: 0px;
+	max-width: 280px;
 	z-index: 1;
 }
 
@@ -260,10 +264,12 @@ figure {
 	top: 1900px;
 	left: 20px;
 }
-#vic_footer_h3 { 
+
+#vic_footer_h3 {
 	position: relative;
 	top: 0px;
 }
+
 #vic_footer_h3 p {
 	position: relative;
 	color: hsla(0,0%,100%,1.00);
@@ -324,6 +330,10 @@ figure {
 	border: 1px inset hsla(197,77%,44%,1.00);
 }
 
+img {
+	width: 100%;
+}
+
 #nav_article {
 	position: absolute;
 	top: 400px;
@@ -345,9 +355,9 @@ figure {
 }
 
 /* BUTTON STYLING======================= */
-button {
-	position: relative;
-	top: 20px;
+.view_cmp_btn {
+	position: absolute;
+	top: 0px;
 	left: 30px;
 	width: 200px;
 	height: 50px;
@@ -356,11 +366,48 @@ button {
 	background-color: hsla(198,87%,44%,1.00);
 	font-size: 1em;
 	font-family: Nunito;
+	z-index: 999;
+	display: block;
 }
 
-button.view_cmp_btn a {
+.view_cmp_btn:hover {
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	width: 200px;
+	height: 50px;
+	border: 0px;
+	border-radius: 24px;
+	background-color: hsla(0,0%,0%,1.00);
+	font-size: 1em;
+	font-family: Nunito;
+	z-index: 999;
+	display: block;
+}
+
+.view_cmp_btn a {
+	position: absolute;
+	top: -6px;
+	left: 0px;
+	width: 200px;
+	height: 50px;
+	line-height: 4em;
+	text-align: center;
 	display: block;
 	color: hsla(0,0%,100%,1.00);
 }
 
-#vic_foot { position: relative; top: 1010px; left: 0px; }
+.foot_btn {
+	position: relative;
+	top: 20px;
+	height: 50px;
+}
+
+#vic_foot {
+	position: relative;
+	top: 1010px;
+	left: 0px;
+}
+
+@media (max-width: 680px) {
+}

@@ -1,0 +1,464 @@
+@charset "UTF-8";
+/* CSS Tablet Document */
+
+@media only screen and (min-width: 768px) {
+/* Global CSS Styles */
+body {
+	max-height: 6054px;
+	background: hsla(0,0%,83%,1.00);
+}
+
+#vic_page_wrap {
+	width: 768px;
+	background: hsla(0,0%,83%,1.00);
+	margin: 0px auto;
+	z-index: 0;
+}
+
+/* HEADER ============================== */
+#vic_header_wrap {
+	position: relative;
+}
+
+
+.vic_head_wrap {
+	position: relative;
+	background: hsla(0,0%,100%,1.00);
+	border-radius: 24px;
+	}
+
+#vic_logo img {
+	position: absolute;
+	top: -555px;
+	left: 0px;
+	width: 45%;
+	z-index: 2;
+}
+
+#vic_cta_img {
+	position: relative;
+	top: -6px;
+	width: 100%;
+	padding-top: 80px;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+	background: hsla(0,0%,100%,1.00);
+}
+
+.vic_bg_img {
+	position: relative;
+	min-width: 100%;
+}
+
+#vic_nav_ul {
+	position: absolute;
+	top: -522px;
+	left: 345px;
+	width: 400px;
+	border-radius: 24px;
+	background-color: hsla(0,0%,100%,1.00);
+	z-index: 1;
+}
+
+.vic_nav_li {
+	width: 33.33333333333333%;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+}
+
+.vic_nav_li:first-child {
+	border-bottom-left-radius: 24px;
+}
+
+.vic_nav_li a {
+	text-decoration: none;
+	color: hsla(0,0%,0%,1.00);
+	font-family: Nunito;
+	font-size: 1em;
+	display: block;
+	line-height: 2em;
+	text-align: top;
+}
+
+.vic_nav_li a:hover {
+	text-decoration: none;
+	color: hsla(0,0%,100%,1.00);
+	font-family: Nunito;
+	font-size: 1em;
+	display: block;
+	background-color: hsla(197,77%,44%,1.00);
+	border-radius: 24px;
+}
+
+/* ABOUT ============================== */ 
+#vic_about_ico, #vic_blog_ico, #vic_comp_ico {
+	height: 24px;
+	width: 24px;
+	margin: 14px 0px 0px 45px;
+}
+
+.vic_art_wrap {
+	background-color: hsla(0,0%,100%,1.00);
+	margin: 25px 20px 0px 20px;
+	padding: 20px 20px 0px 20px;
+	border-radius: 24px;
+	height: 100%;
+}
+
+article {
+	hieght: 100%;
+}
+
+article p {
+	color: hsla(0,0%,0%,1.00);
+	font-family: Nunito;
+	font-size: .8em;
+	margin: 0px 5px 0px 5px;
+	padding: 0px 5px 0px 5px;
+}
+
+strong {
+	color: hsla(197,77%,44%,1.00);
+	font-family: Nunito;
+	font-size: 1em;
+}
+
+/* COMPONENTS-IMAGES ============================== */
+
+figure {
+	height: 100%;
+}
+
+#slider_pic {
+	position: absolute;
+	top: 40px;
+	left: 3px;
+	width: 680px;
+	height: 260px;
+	margin-bottom: 20px;
+	border-radius: 24px;
+	border: 1px inset hsla(197,77%,44%,1.00);
+}
+
+#nav_pic {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 688px;
+	height: 260px;
+	margin-bottom: 20px;
+	border-radius: 24px;
+	border: 1px inset hsla(197,77%,44%,1.00);
+}
+
+#forms_pic {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 688px;
+	height: 260px;
+	margin-bottom: 20px;
+	border-radius: 24px;
+	border: 1px inset hsla(197,77%,44%,1.00);
+}
+
+#maps_pic {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 688px;
+	height: 260px;
+	margin-bottom: 20px;
+	border-radius: 24px;
+	border: 1px inset hsla(197,77%,44%,1.00);
+}
+
+#footer_pic {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 688px;
+	height: 260px;
+	margin-bottom: 20px;
+	border-radius: 24px;
+	border: 1px inset hsla(197,77%,44%,1.00);
+}
+
+/* HEADINGS ============================== */
+
+
+.vic_h2_style {
+	position: relative;
+	left: 225px;
+	height: 50px;
+	width: 320px;
+	margin-top: 5px;
+}
+
+.vic_h2_style a {
+	position: absolute;
+	top: 10px;
+	left: 25%;
+	font-family: Nunito;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: hsla(0,0%,0%,1.00);
+	text-align: center;
+	display: block;
+}
+#about_content {
+	position: relative;
+	top: -10px;
+	}
+
+#cta_head {
+	position: relative;
+	top: 0px;
+	}
+
+
+.vic_h3_style {	position: relative;
+	top: -20px;
+	height: 40px;
+	width: 688px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: hsla(0,0%,0%,1.00);
+	text-align: center;
+	border-radius: 24px;
+}
+
+.vic_h3_style a {
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	font-family: Nunito;
+	font-size: 1em;
+	text-decoration: none;
+	color: hsla(0,0%,100%,1.00);
+	text-align: center;
+	display: block;
+}
+
+#vic_form_h3 {
+	position: absolute;
+	top: 550px;
+	left: 20px;
+}
+
+#vic_maps_h3 {
+	position: absolute;
+	top: 1100px;
+	left: 0px;
+}
+
+#vic_foot_h3 {
+	position: absolute;
+	top: 1670px;
+	left: 0px;
+}
+
+#vic_footer_h3 {
+	position: relative;
+	top: 0px;
+}
+
+#vic_footer_h3 p {
+	position: relative;
+	color: hsla(0,0%,100%,1.00);
+	font-family: Nunito;
+	font-size: .8em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* SECTIONS - WRAPS ============================== */ 
+
+#main_comp_wrap {
+	position: relative;
+	top: -10px;
+	height: 100%;
+	padding-bottom: 160px;
+}
+
+#vic_foot_wrap {
+	position: relative;
+	background-color: hsla(197,77%,44%,1.00); 
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	top: 0px;
+}
+
+#comp_nav_wrap {
+	position: relative;
+	top: -15px;
+	height: 2240px;
+}
+
+#vic_main_comp {
+	position: relative;
+	height: 100%;
+	top: 0px;
+}
+
+#vic_blog_sect {
+	position: relative;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+#components_head {
+	position: relative;
+	top: -10px;
+	
+	}
+#vic_comp_sect {
+	position: relative;
+	top: 0px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	background-color: hsla(0,0%,100%,0.00);
+}
+
+#vic_blog_sect article {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#vic_decon_img {
+	position: absolute;
+	top: 0px;
+	left: 13px;
+	width: 680px;
+	height: 420px;
+	border-radius: 24px;
+	border: 1px inset hsla(197,77%,44%,1.00);
+}
+#decon_fig {
+	position: relative;
+	top: -30px;
+	left: -10px;
+	width: 260px;
+	height: 340px;
+	}
+
+img {
+	width: 100%;
+
+}
+#slider_article {
+	position: relative;
+	margin-top: 280px;
+	top: 500px;
+}
+#nav_article {
+	position: absolute;
+	top: 370px;
+	padding-right: 10px;
+}
+
+#form_article {
+	position: absolute;
+	top: 915px;
+}
+
+#maps_article {
+	position: absolute;
+	top: 1465px;
+}
+
+#foot_article {
+	position: absolute;
+	top: 2035px;
+}
+#vic_4th_comp {
+	position: relative;
+	top: -115px;
+	}
+#vic_5th_comp {
+	position: relative;
+	top: -115px;
+	}
+/* BUTTON STYLING======================= */
+.view_cmp_btn {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	width: 200px;
+	height: 50px;
+	border: 0px;
+	border-radius: 24px;
+	background-color: hsla(198,87%,44%,1.00);
+	font-size: 1em;
+	font-family: Nunito;
+	z-index: 999;
+	display: block;
+}
+
+.view_cmp_btn:hover {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	width: 200px;
+	height: 50px;
+	border: 0px;
+	border-radius: 24px;
+	background-color: hsla(0,0%,0%,1.00);
+	font-size: 1em;
+	font-family: Nunito;
+	z-index: 999;
+	display: block;
+}
+
+.view_cmp_btn a {
+	position: absolute;
+	top: -6px;
+	left: 0px;
+	width: 200px;
+	height: 50px;
+	line-height: 4em;
+	text-align: center;
+	display: block;
+	color: hsla(0,0%,100%,1.00);
+}
+
+#slider_btn {  
+	position: relative;
+	top: 360px;
+}
+#nav_btn {
+	position: relative;
+	top: 22px;
+}
+#form_btn {
+	position: relative;
+	top: 32px;
+}
+#map_btn {
+	position: relative;
+	top: 32px;
+}
+#footer_btn {
+	position: relative;
+	top: 32px;
+}
+.foot_btn {
+	position: relative;
+	top: 110px;
+	height: 50px;
+}
+
+#vic_foot {
+	position: relative;
+	margin-top: -5px;
+	left: 0px;
+}
+}
+

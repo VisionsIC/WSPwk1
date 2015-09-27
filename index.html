@@ -2,9 +2,11 @@
 <html>
 <head>
 <title>WSP: Aaron Wilson</title>
-<link rel="stylesheet" media="(max-width: 680px)" href="other_devices.css" />
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="css/tablet.css" />
+<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+<script src="js/less.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="vic_page_wrap"> <img id="vic_cta_img" src="images/aaron_new.png" alt="Aaron Wilson background image"> 
@@ -26,13 +28,13 @@
   
   <!-- About -->
   <head>
-  <div class="vic_head_wrap">
-    <h2 class="vic_h2_style" id="vic_about_h2"> <img id="vic_about_ico" src="images/about.png" alt=""><a href="#">About</a> </h2>
+  <div class="vic_head_wrap" id="about_head">
+    <h2 class="vic_h2_style" id="vic_about_h2"> <img id="vic_about_ico" src="images/about.png" alt=""><a href="#">About Me</a> </h2>
   </div>
   </head>
   <section id="vic_about_sect">
     <article>
-      <div class="vic_art_wrap">
+      <div class="vic_art_wrap" id="about_content">
         <p><strong>I, Aaron Robert Wilson, </strong> was born in Lower Merion, PA; of which is a suburb of Philadelphia. I'm a digital immigrant, can remember the day my school opened it's first computer lab. To understand me, you must first understand the background of the two beautiful human beings that brought me into this world. </p>
         <br>
         <p>My mother, Loretta, comes from a hardworking Italian-American family. A family to where almost all the men became construction workers.  It is fairly safe to say that my mother's side is of mechanically inclined people. My father's side is comprised of almost all art-oriented people. My father passed away when I was 8 years old. He was a published poet. My grand mom is still living at 93, an author, and has two books currently for sale on Amazon. My uncle has been working on Broadway for almost 40 years. My Aunt is a theatrical actress, director, and a columnist for a theatrical weblog. </p>
@@ -45,31 +47,31 @@
     </article>
   </section>
   <!-- Blog, Components -->
-  <div class="vic_head_wrap">
-    <h2 class="vic_h2_style" id="vic_blog_h2"> <img id="vic_blog_ico" src="images/blog.png" alt="blog icon graphic"><a href="#">Main CTA Component</a> </h2>
+  <div class="vic_head_wrap" id="cta_head">
+    <h2 class="vic_h2_style" id="vic_blog_h2"> <img id="vic_blog_ico" src="images/blog.png" alt="blog icon graphic"><a href="#">Main CTA</a> </h2>
   </div>
   <section id="vic_blog_sect">
     <div class="vic_art_wrap" id="main_comp_wrap">
       <div class="vic_comp_wrap" id="vic_main_comp">
         <h3 class="vic_h3_style" id="vic_comp_h3"> <a href="#">Slider Component</a> </h3>
         <figure> <img id="slider_pic" src="images/slider.png" alt="slider component image"> </figure>
-        <article>
+        <article id="slider_article">
           <p>The Sider component is my main component of focus. I have always longed to possess the necessary skills to design such a beautiful component. I see the image slider as such an impactful tool to which adds an artistic element to the webpage. I think if used right, it has endless possibilities. You can enhance it by overlaying text and buttons integrated with animations to create a stunning effective presentation piece. It is the ideal CTA / Central focal point to every webpage it graces.</p>
           <br>
           <p>From both an easthetics and a technical standpoint, the image slider would be mainly comprised of JavaScript controlling the necessary actions to get the slider to perform it's magic. Sliders usaully have forward and back buttons to help the user toggle or scroll through images. They also are typically seen having a pinpoint/radio button like navigation structure to help the guide themsevles through each image of the slider.</p>
           <br>
           <p>As mentioned before, sliders can also consist of images mixed with descriptive text to ad to, or enhance each image in particular that's shown. <b>See Infograph Below:</b></p>
           <footer class="foot_btn">
-            <span class="view_cmp_btn"><a href="components/1/slider_component.html">View Component</a></span>
+            <span class="view_cmp_btn" id="slider_btn"><a href="components/1/slider_component.html">View Component</a></span>
           </footer>
         </article>
       </div>
-      <figure> <img id="vic_decon_img" src="images/slide_decon.png" alt="slider diagram graphic"> </figure>
+      <figure id="decon_fig"> <img id="vic_decon_img" src="images/slide_decon.png" alt="slider diagram graphic"> </figure>
     </div>
   </section>
   <section id="vic_comp_sect">
-    <div class="vic_head_wrap">
-      <h2 class="vic_h2_style" id="vic_comp_h2"> <img id="vic_comp_ico" src="images/components.png" alt="component icon graphic"><a href="#">Additional Components</a> </h2>
+    <div class="vic_head_wrap" id="components_head">
+      <h2 class="vic_h2_style" id="vic_comp_h2"> <img id="vic_comp_ico" src="images/components.png" alt="component icon graphic"><a href="#">Components</a> </h2>
     </div>
     <div class="vic_art_wrap" id="comp_nav_wrap">
       <div class="vic_comp_wrap" id="vic_2nd_comp">
@@ -78,7 +80,7 @@
           <p>The Navigation component is another component of focus. I also feel that it's a necessary skill to bring to the table a component like a drop-down navigation component. I really like a particular type of drow-down menu navigation system. One where the hover drop-down feature is comprised of pictures as well as links.</p>
           <br>
           <p>With a healthy mixture of HTML, CSS, and jQuery skills; I sure I'll be able to pull off this awesome task. I have a goal to bring my perfect drop-down navigation menu to a reality.</p>
-          <footer class="foot_btn">
+          <footer class="foot_btn" id="nav_btn">
             <span class="view_cmp_btn"><a href="components/2/nav_component.html">View Component</a></span>
           </footer>
         </article>
@@ -89,7 +91,7 @@
           <p>The Form component is yet another component of importance to the continuity of a modern webpage. I would like my focus to be on the proper placement of various aspects of the form component. I hope to gain the skills to have total control over the layout of form elements such as input boxes, check boxes, radio buttons, and submit buttons.</p>
           <br>
           <p>My key interest is to develop a harmony between label fields and all other accompanying input features.</p>
-          <footer class="foot_btn">
+          <footer class="foot_btn" id="form_btn">
             <span class="view_cmp_btn"><a href="components/3/form_component.html">View Component</a></span>
           </footer>
         </article>
@@ -100,7 +102,7 @@
           <p>The Map component is a very intimidating yet intriquing component for me. I would hope to learn the skillset necessary to pull off developingment of this component to where I could have this featured in my websites I build in the near future. With the majority of the focus on GPS coordinate, this is one of the unknown scary aspects that make this component rather intimidating for me.</p>
           <br>
           <p>My goal moving forward is to overcome these fears and develop awesome map widgets in my sites.</p>
-          <footer class="foot_btn">
+          <footer class="foot_btn" id="map_btn">
             <span class="view_cmp_btn"><a href="components/4/maps_component.html">View Component</a></span>
           </footer>
         </article>
@@ -111,7 +113,7 @@
           <p>The footer component is a component that I feel I have a fairly decent understanding of. I do wanna learn the ins and outs of incorporating some sort of footer navigation or links to a semantically correct footer component. With the majority of the focus on GPS coordinate, this is one of the unknown scary aspects that make this component rather intimidating for me.</p>
           <br>
           <p>This marks the conclusion of the Aaron Wilson planning blog. there will definitely be more to come, Thank you!</p>
-          <footer class="foot_btn">
+          <footer class="foot_btn" id="footer_btn">
             <span class="view_cmp_btn"><a href="components/5/footer_component.html">View Component</a></span>
           </footer>
         </article>
@@ -125,7 +127,8 @@
       </h3>
     </div>
   </footer>
-  <script src="prefixfree.min.js"></script> 
+  <script src="prefixfree.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script> 
 </div>
 </body>
 </html>
